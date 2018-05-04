@@ -1,13 +1,13 @@
 const path = require('path');
 
 const PATHS = {
-  app: path.resolve(__dirname,'demo'),
-  build: path.resolve(__dirname,'demo/build')
+  app: path.resolve(__dirname,'demo/'),
+  build: path.resolve(__dirname,'demo/static')
 };
 
 module.exports = {
   entry: {
-    app: PATHS.app + "/main.js"
+    app: PATHS.app + "/components/main.js"
   },
 
   output: {

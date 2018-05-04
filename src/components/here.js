@@ -33,12 +33,12 @@ class Here extends Component {
         center
       });
 
-      if (mapEvents) {
+      if (this.props.mapEvents) {
         this.behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(this.map));
       }
 
       // Create the default UI components
-      if (mapUi) {
+      if (this.props.mapUi) {
         this.ui = H.ui.UI.createDefault(this.map, this.defaultLayers);
 
         // Remove not needed settings control
@@ -46,11 +46,11 @@ class Here extends Component {
       }
 
       // Show traffic tiles
-      if (traffic) {
+      if (this.props.traffic) {
         this.map.setBaseLayer(this.defaultLayers.normal.traffic);
       }
 
-      if (incidents) {
+      if (this.props.incidents) {
         this.map.addLayer(this.defaultLayers.incidents);
       }
     })
@@ -72,8 +72,8 @@ Here.defaultProps = {
   },
 
   center: {
-    lat: 39.8056548,
-    lng: 39.3074268
+    lat: 41.03115,
+    lng: 29.00214
   },
 
   styles: {
@@ -81,7 +81,7 @@ Here.defaultProps = {
     height: '480px'
   },
 
-  zoom: 10,
+  zoom: 13,
   mapEvents: true,
   mapUi: true,
   traffic: false,
