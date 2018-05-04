@@ -22,7 +22,7 @@ import { Here } from 'react-here';
 ### Props
 
 Property                             | type      | Default Value
--------------------------------------|-----------|------------------|-----------------------------------------------------------------
+-------------------------------------|-----------|-----------------------------------------------------------------------------------
 platform                             | Object    | platform: { appId: '', appCode: '', useCIT: true, useHTTPS: true },
 center                               | Object    | center: { lat: 41.03115, lng: 29.00214 },
 styles                               | Object    | center: { lat: 41.03115, lng: 29.00214 },
