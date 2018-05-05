@@ -1,8 +1,8 @@
 const path = require('path');
 
 const PATHS = {
-  app: path.resolve(__dirname,'demo/'),
-  build: path.resolve(__dirname,'demo/static')
+  app: path.resolve(__dirname,'docs/'),
+  build: path.resolve(__dirname,'docs/static')
 };
 
 module.exports = {
